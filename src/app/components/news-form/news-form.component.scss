@@ -1,0 +1,70 @@
+@import "../../../color-variables.scss";
+
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $form-color;
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+
+    b {
+      background: -webkit-linear-gradient(180deg, $light-primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  p {
+    margin: 15px auto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: justify;
+  }
+
+  .text {
+    flex: 1;
+  }
+
+  form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+
+    label {
+      color: #fff;
+    }
+
+    input {
+      background: none;
+      border: none;
+      border-bottom: 2px solid $primary-text;
+      width: 100%;
+      height: 60px;
+      margin-bottom: 40px;
+      padding-left: 20px;
+      color: green;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (min-width: 1080px) {
+  .form-section {
+    flex-direction: row;
+    gap: 115px;
+    padding: 40px 120px;
+  }
+}

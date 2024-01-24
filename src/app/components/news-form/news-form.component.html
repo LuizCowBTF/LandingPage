@@ -1,0 +1,26 @@
+<section class="form-section pad-70">
+  <div class="text">
+    <h3>
+      Desenvolvendo <b>Inovvação</b>.
+    </h3>
+    <p>
+      Proporcionar uma única e marcante experiência através de tecnologias ímpares é o que move o nosso processo criativo e nos permite entregar serviços com qualidade aos nossos parceiros.<br>
+      O ato de se desenvolver resulta na ação de estar apto para o próximo passo, direção ou etapa superior a que se encontra na fase atual.<br>
+      Significa em um enfoque diferenciado para produtos, serviço e ambientes usados por sistemas de grande complexidade.
+    </p>
+  </div>
+  <form [formGroup]="newsLetterForms">
+    <label for="name">Nome: </label>
+    <input type="text" id="name" formControlName="name" />
+    <label for="email">E-Mail: </label>
+    <input type="email" id="email" formControlName="email" />
+    <btn-primary
+      btn-text="Increva-se"
+      variant="secondary"
+      (submit)="onSubmit()"
+      [disabled]="!newsLetterForms.valid"
+    >
+    </btn-primary>
+  </form>
+</section>
+
