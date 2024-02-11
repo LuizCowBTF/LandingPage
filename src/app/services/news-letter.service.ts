@@ -2,12 +2,17 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
+interface NewsLetterResponse {
+  message: string
+}
+
+
 @Injectable({
   providedIn: 'root'
 })
 export class NewsLetterService {
 
-  private endPointURL = 'https://faed47pcwb7biktidlecuafuty@aegep.lambda-url.us-east-1.on.aws/';
+  private endPointURL = 'https://faed47pcwb7biktidlecuafuty0aegep.lambda-url.us-east-1.on.aws/';
 
   constructor(private http: HttpClient) {}
 

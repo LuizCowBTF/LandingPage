@@ -19,6 +19,7 @@
       variant="secondary"
       (submit)="onSubmit()"
       [disabled]="!newsLetterForms.valid"
+      [loading]="loading()"
     >
     </btn-primary>
   </form>
